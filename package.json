@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "description": "Simple utilities for Typescript objects.",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,13 @@
   },
   "homepage": "https://github.com/cravend/get-typescript-keys/",
   "devDependencies": {
+    "@release-it/conventional-changelog": "^5.0.0",
+    "release-it": "^15.0.0",
     "typescript": "^4.7.3"
+  },
+  "release-it": {
+    "plugins": {
+      "@release-it/conventional-changelog": {}
+    }
   }
 }
