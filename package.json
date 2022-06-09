@@ -28,6 +28,9 @@
     "typescript": "^4.7.3"
   },
   "release-it": {
+    "github": {
+      "release": true
+    },
     "plugins": {
       "@release-it/conventional-changelog": {}
     }
