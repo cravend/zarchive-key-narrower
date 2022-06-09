@@ -5,6 +5,7 @@
   "description": "Simple utilities for Typescript objects.",
   "scripts": {
     "build": "tsc",
+    "test": "jest",
     "prepare": "husky install",
     "lint": "eslint --ext .ts src",
     "release": "release-it --npm.yarn"
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/cravend/key-narrower/",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.0.0",
+    "@types/jest": "^28.1.1",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "conventional-changelog-conventionalcommits": "^5.0.0",
@@ -34,7 +36,9 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
     "husky": "^8.0.1",
+    "jest": "^28.1.1",
     "release-it": "^15.0.0",
+    "ts-jest": "^28.0.4",
     "typescript": "^4.7.3"
   },
   "release-it": {
