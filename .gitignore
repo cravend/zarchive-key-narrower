@@ -4,11 +4,8 @@
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
+!.yarn/sdks
 !.yarn/versions
-
-# sdks
-/.vim
-/.vscode
 
 # testing
 /coverage

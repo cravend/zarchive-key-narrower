@@ -3,6 +3,9 @@
   "packageManager": "yarn@3.2.1",
   "version": "0.0.1-alpha",
   "description": "Simple utilities for Typescript objects.",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cravend/get-typescript-keys.git"
@@ -17,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/cravend/get-typescript-keys/issues"
   },
-  "homepage": "https://github.com/cravend/get-typescript-keys/"
+  "homepage": "https://github.com/cravend/get-typescript-keys/",
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
 }
