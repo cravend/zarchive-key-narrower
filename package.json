@@ -1,11 +1,11 @@
 {
   "name": "key-narrower",
   "packageManager": "yarn@3.2.1",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple utilities for Typescript objects.",
   "scripts": {
     "build": "tsc",
-    "release": "release-it"
+    "release": "release-it --npm.yarn"
   },
   "repository": {
     "type": "git",
@@ -24,16 +24,24 @@
   "homepage": "https://github.com/cravend/get-typescript-keys/",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.0.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "release-it": "^15.0.0",
     "typescript": "^4.7.3"
   },
   "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
     "github": {
       "release": true,
       "releaseName": "v${version}"
     },
     "plugins": {
-      "@release-it/conventional-changelog": {}
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "conventionalcommits"
+        }
+      }
     }
   }
 }

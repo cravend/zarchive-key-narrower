@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@release-it/conventional-changelog", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:5.0.0"],\
+            ["conventional-changelog-conventionalcommits", "npm:5.0.0"],\
             ["release-it", "npm:15.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
@@ -1132,6 +1133,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/conventional-changelog-conventionalcommits-npm-4.6.3-8a4923dc62-7b8e8a21eb.zip/node_modules/conventional-changelog-conventionalcommits/",\
           "packageDependencies": [\
             ["conventional-changelog-conventionalcommits", "npm:4.6.3"],\
+            ["compare-func", "npm:2.0.0"],\
+            ["lodash", "npm:4.17.21"],\
+            ["q", "npm:1.5.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/conventional-changelog-conventionalcommits-npm-5.0.0-a270202fe8-b67d12e4e0.zip/node_modules/conventional-changelog-conventionalcommits/",\
+          "packageDependencies": [\
+            ["conventional-changelog-conventionalcommits", "npm:5.0.0"],\
             ["compare-func", "npm:2.0.0"],\
             ["lodash", "npm:4.17.21"],\
             ["q", "npm:1.5.1"]\
@@ -3041,6 +3052,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["key-narrower", "workspace:."],\
             ["@release-it/conventional-changelog", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:5.0.0"],\
+            ["conventional-changelog-conventionalcommits", "npm:5.0.0"],\
             ["release-it", "npm:15.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
