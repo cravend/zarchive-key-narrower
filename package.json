@@ -1,5 +1,5 @@
 {
-  "name": "object-access",
+  "name": "key-narrower",
   "packageManager": "yarn@3.2.1",
   "version": "0.1.0",
   "description": "Simple utilities for Typescript objects.",

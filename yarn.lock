@@ -5,9 +5,9 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"object-access@workspace:.":
+"key-narrower@workspace:.":
   version: 0.0.0-use.local
-  resolution: "object-access@workspace:."
+  resolution: "key-narrower@workspace:."
   dependencies:
     typescript: ^4.7.3
   languageName: unknown
