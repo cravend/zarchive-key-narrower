@@ -1,7 +1,7 @@
 {
   "name": "object-access",
   "packageManager": "yarn@3.2.1",
-  "version": "0.0.1-alpha",
+  "version": "0.1.0",
   "description": "Simple utilities for Typescript objects.",
   "scripts": {
     "build": "tsc"
