@@ -1,0 +1,21 @@
+{
+  "name": "object-access",
+  "packageManager": "yarn@3.2.1",
+  "version": "0.0.1-alpha",
+  "description": "Simple utilities for Typescript objects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cravend/get-typescript-keys.git"
+  },
+  "keywords": [
+    "typescript",
+    "object",
+    "keys"
+  ],
+  "author": "cravend <https://github.com/cravend>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cravend/get-typescript-keys/issues"
+  },
+  "homepage": "https://github.com/cravend/get-typescript-keys/"
+}
