@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-airbnb-base", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:15.0.0"],\
             ["eslint-config-airbnb-typescript", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:17.0.0"],\
             ["eslint-plugin-import", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:2.26.0"],\
+            ["husky", "npm:8.0.1"],\
             ["release-it", "npm:15.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
@@ -3209,6 +3210,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["husky", [\
+        ["npm:8.0.1", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.1-85fede8470-943a73a13d.zip/node_modules/husky/",\
+          "packageDependencies": [\
+            ["husky", "npm:8.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["iconv-lite", [\
         ["npm:0.4.24", {\
           "packageLocation": "./.yarn/cache/iconv-lite-npm-0.4.24-c5c4ac6695-bd9f120f5a.zip/node_modules/iconv-lite/",\
@@ -3913,6 +3923,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-airbnb-base", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:15.0.0"],\
             ["eslint-config-airbnb-typescript", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:17.0.0"],\
             ["eslint-plugin-import", "virtual:c0ceb9f5a524bb0882afead41ff0da4a0679cb81bcdd4328206b54d4ef9083202d2db7c1055cdd91815fa290190c6fb739a387c19d81fcfee84cf23b7622c176#npm:2.26.0"],\
+            ["husky", "npm:8.0.1"],\
             ["release-it", "npm:15.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
