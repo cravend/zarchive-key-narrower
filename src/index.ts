@@ -1,3 +1,3 @@
-import { isValidKey } from "./keys";
+import { isValidKey, getValidKey } from "./keys";
 
-export { isValidKey };
+export { isValidKey, getValidKey };
