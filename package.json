@@ -35,6 +35,7 @@
     "eslint-config-airbnb-base": "latest",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^26.5.3",
     "husky": "^8.0.1",
     "jest": "^28.1.1",
     "release-it": "^15.0.0",
