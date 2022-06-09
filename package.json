@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cravend/get-typescript-keys.git"
+    "url": "git+https://github.com/cravend/key-narrower.git"
   },
   "keywords": [
     "typescript",
@@ -19,9 +19,9 @@
   "author": "cravend <https://github.com/cravend>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cravend/get-typescript-keys/issues"
+    "url": "https://github.com/cravend/key-narrower/issues"
   },
-  "homepage": "https://github.com/cravend/get-typescript-keys/",
+  "homepage": "https://github.com/cravend/key-narrower/",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
