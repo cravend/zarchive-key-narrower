@@ -22,11 +22,13 @@
         "project": "./tsconfig.json"
     },
     "plugins": [
+        "prettier",
         "@typescript-eslint",
         "jest"
     ],
     "rules": {
         "@typescript-eslint/comma-dangle": "off",
-        "@typescript-eslint/quotes": "off"
+        "@typescript-eslint/quotes": "off",
+        "operator-linebreak": "off"
     }
 }
