@@ -28,21 +28,21 @@
   "homepage": "https://github.com/cravend/key-narrower/",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.0.0",
-    "@types/jest": "^28.1.1",
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
+    "@types/jest": "^28.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-config-airbnb-base": "latest",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.5.3",
     "husky": "^8.0.1",
-    "jest": "^28.1.1",
-    "lint-staged": "^13.0.1",
-    "release-it": "^15.0.0",
-    "ts-jest": "^28.0.4",
-    "typescript": "^4.7.3"
+    "jest": "^28.1.2",
+    "lint-staged": "^13.0.3",
+    "release-it": "^15.1.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
   },
   "lint-staged": {
     "src/**/*.ts": [
