@@ -13,21 +13,9 @@ import { isValidKey } from "./keys";
  */
 export function getItem<T extends Record<string, unknown>>(
   object: T,
-  key: keyof T,
-  defaultValue?: undefined
-): T[keyof T];
-
-export function getItem<T extends Record<string, unknown>>(
-  object: T,
   key: unknown,
   defaultValue?: undefined
 ): T[keyof T] | undefined;
-
-export function getItem<T extends Record<string, unknown>, D>(
-  object: T,
-  key: keyof T,
-  defaultValue: D
-): T[keyof T];
 
 export function getItem<T extends Record<string, unknown>, D>(
   object: T,
