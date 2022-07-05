@@ -4,7 +4,7 @@
   "version": "0.2.2",
   "description": "Simple utilities for Typescript objects.",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "test": "jest",
     "prepare": "husky install",
     "lint": "eslint",
