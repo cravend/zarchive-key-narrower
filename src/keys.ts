@@ -11,7 +11,7 @@
  */
 export function isValidKey<T extends Record<string, unknown>>(
   keyToTest: string | number | symbol,
-  objectToTest: T,
+  objectToTest: T
 ): keyToTest is keyof T {
   return keyToTest in objectToTest;
 }
@@ -44,7 +44,7 @@ export function getValidKey<T extends Record<string, unknown>>(
 export function getValidKey<T extends Record<string, unknown>>(
   key: string | number | symbol,
   object: T,
-  defaultValue?: keyof T,
+  defaultValue?: keyof T
 ) {
   return key in object ? (key as keyof T) : defaultValue;
 }

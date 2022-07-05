@@ -5,6 +5,7 @@
         "jest/globals": true
     },
     "extends": [
+        "plugin:prettier/recommended",
         "airbnb-base",
         "airbnb-typescript/base",
         "eslint:recommended",
@@ -12,8 +13,7 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@typescript-eslint/strict",
-        "plugin:jest/recommended",
-        "plugin:jest/style"
+        "plugin:jest/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -24,5 +24,9 @@
     "plugins": [
         "@typescript-eslint",
         "jest"
-    ]
+    ],
+    "rules": {
+        "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/quotes": "off"
+    }
 }
