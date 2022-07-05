@@ -3,15 +3,15 @@
  * the object provided. It is also used to narrow the type of the param
  * `keyToTest`.
  *
- * @param keyToTest The key to be tested.
  * @param objectToTest The object to be accessed.
+ * @param keyToTest The key to be tested.
  *
  *
  * @returns A type assertion indicating if the key is a valid key of the object.
  */
 export function isValidKey<T extends Record<string, unknown>>(
-  keyToTest: unknown,
-  objectToTest: T
+  objectToTest: T,
+  keyToTest: unknown
 ): keyToTest is keyof T {
   return (
     (typeof keyToTest === "string" ||
@@ -27,8 +27,8 @@ export function isValidKey<T extends Record<string, unknown>>(
  * key. If the key is not present in the object, it will return the default
  * value. If the default value is not provided, it will return undefined.
  *
- * @param key The key to be tested.
  * @param object The object to be accessed.
+ * @param key The key to be tested.
  * @param defaultValue An optional default value to be be returned
  * if the key is not present in the object.
  *
@@ -36,21 +36,21 @@ export function isValidKey<T extends Record<string, unknown>>(
  * is not present in the object, or undefined.
  */
 export function getValidKey<T extends Record<string, unknown>>(
-  key: unknown,
   object: T,
+  key: unknown,
   defaultValue: keyof T
 ): keyof T;
 
 export function getValidKey<T extends Record<string, unknown>>(
-  key: unknown,
   object: T,
+  key: unknown,
   defaultValue?: undefined
 ): keyof T | undefined;
 
 export function getValidKey<T extends Record<string, unknown>>(
-  key: unknown,
   object: T,
+  key: unknown,
   defaultValue?: keyof T
 ) {
-  return isValidKey(key, object) ? key : defaultValue;
+  return isValidKey(object, key) ? key : defaultValue;
 }
