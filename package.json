@@ -3,13 +3,16 @@
   "packageManager": "yarn@3.2.1",
   "version": "1.0.0",
   "description": "Simple utilities for Typescript objects.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
-    "test": "jest",
-    "prepare": "husky install",
+    "clean": "rm -rf dist .tsbuildinfo",
     "lint": "eslint",
     "lint:all": "eslint --ext .ts src",
-    "release": "release-it --npm.yarn"
+    "prepublishOnly": "yarn clean && yarn test && yarn lint:all && yarn build",
+    "release": "release-it",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -51,21 +54,5 @@
     "src/**/*.ts": [
       "yarn lint --fix"
     ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release v${version}"
-    },
-    "github": {
-      "release": true,
-      "releaseName": "v${version}"
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": {
-          "name": "conventionalcommits"
-        }
-      }
-    }
   }
 }
