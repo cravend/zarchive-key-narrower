@@ -35,6 +35,7 @@ export function isValidKey<T extends Record<string, unknown>>(
  * @returns The key if it is in the object, the default value if the key
  * is not present in the object, or undefined.
  */
+
 export function getValidKey<T extends Record<string, unknown>>(
   object: T,
   key: unknown,
@@ -44,13 +45,13 @@ export function getValidKey<T extends Record<string, unknown>>(
 export function getValidKey<T extends Record<string, unknown>>(
   object: T,
   key: unknown,
-  defaultValue?: undefined
+  defaultValue?: keyof T | undefined
 ): keyof T | undefined;
 
 export function getValidKey<T extends Record<string, unknown>>(
   object: T,
   key: unknown,
-  defaultValue?: keyof T
+  defaultValue?: keyof T | undefined
 ) {
   return isValidKey(object, key) ? key : defaultValue;
 }

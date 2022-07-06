@@ -11,22 +11,23 @@ import { isValidKey } from "./keys";
  * @param defaultValue The default value to fall back to if the key is not present.
  * @returns An element of the object, the default value, or undefined.
  */
-export function getItem<T extends Record<string, unknown>>(
-  object: T,
-  key: unknown,
-  defaultValue?: undefined
-): T[keyof T] | undefined;
 
-export function getItem<T extends Record<string, unknown>, D>(
+export function getItem<T extends Record<string, unknown>, D = undefined>(
   object: T,
   key: unknown,
   defaultValue: D
 ): T[keyof T] | D;
 
-export function getItem<T extends Record<string, unknown>, D>(
+export function getItem<T extends Record<string, unknown>, D = undefined>(
   object: T,
-  key: keyof T | unknown,
-  defaultValue?: D
+  key: unknown,
+  defaultValue?: D | undefined
+): T[keyof T] | D | undefined;
+
+export function getItem<T extends Record<string, unknown>, D = undefined>(
+  object: T,
+  key: unknown,
+  defaultValue?: D | undefined
 ) {
   return isValidKey(object, key) ? object[key] : defaultValue;
 }
